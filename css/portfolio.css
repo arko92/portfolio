@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400,500,600,700&display=swap");
+body {
+  background-color: #606464;
+  font-size: "Bai Jamjuree";
+  color: #b6cbce; }
+
+/* --- Overwriting header settings ---- */
+h1, h2, h3, h4, h5, h6 {
+  color: #fff;
+  font-weight: 1000; }
+
+p {
+  color: #fff; }
+
+/* --- Overwriting anchor settings ---- */
+a {
+  text-decoration: none;
+  color: #b6cbce;
+  transition: all 0.4s ease; }
+  a:hover {
+    color: #00FF00; }
+  a .link-custom {
+    color: #deff58; }
+
+@media(min-width:992px) {
+  .content-wrapper {
+    padding-left: 360px; } }
+.full-height {
+  min-height: 100vh;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1); }
+
+.container .bg-base {
+  background-color: #252b2c; }
+.container .text-brand {
+  color: #00d9ff;
+  font-size: 20px; }
+
+.link-custom {
+  display: inline-block;
+  position: relative;
+  color: #fff; }
+
+.link-custom::after {
+  content: "";
+  display: block;
+  margin: auto;
+  height: 3px;
+  width: 0px;
+  background: transparent;
+  transition: width 0.5s ease, background-color 0.5s ease; }
+
+.link-custom:hover::after {
+  width: 100%;
+  background: #fff; }
+
+img {
+  width: 100%;
+  text-align: center;
+  background-color: #606464; }
+
+.iconbox {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  color: #00FF00; }
+
+.social-icons a {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #252b2c;
+  border-radius: 100px;
+  font-size: 50px; }
+
+#Contact .form-control {
+  background-color: #fff;
+  border-color: #252b2c;
+  color: #b6cbce; }
+  #Contact .form-control:focus {
+    border-color: #00FF00;
+    box-shadow: none; }
+  #Contact .form-control input .form-control {
+    height: 44px; }
+
+.navbar {
+  background-color: #252b2c; }
+  .navbar .nav-link {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff; }
+    .navbar .nav-link:hover {
+      color: #00FF00; }
+
+.navbar-nav {
+  margin-left: auto; }
+
+.navbar .nav-link.active {
+  color: #00FF00; }
+
+@media(min-width:992px) {
+  .navbar {
+    min-height: 100vh;
+    width: 360px;
+    background: linear-gradient(rgba(37, 43, 44, 0.8), rgba(37, 43, 44, 0.8));
+    background-size: cover;
+    background-position: center; }
+    .navbar .navbar-brand img {
+      border: 6px solid #858080;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5); } }
+.btn {
+  padding: 12px 30px;
+  font-weight: 700; }
+
+.btn-brand {
+  background-color: #252b2c;
+  border-color: #00FF00;
+  color: #fff;
+  font-size: 20px; }
+  .btn-brand:focus {
+    background-color: #252b2c;
+    color: #fff; }
+
+.shadow-effect {
+  transition: all 0.4s; }
+  .shadow-effect:hover {
+    box-shadow: -3px 3px 0 0 #00FF00; }
+
+.card-custom .card-custom-image {
+  overflow: hidden; }
+  .card-custom .card-custom-image img {
+    transition: all 0.4s ease; }
+
+.card-custom:hover .card-custom-image img {
+  transform: scale(1.1); }
+
+/*# sourceMappingURL=portfolio.css.map */

@@ -1,0 +1,28 @@
+.navbar
+  background-color: $color-base
+  .nav-link
+    font-weight: 700
+    text-transform: uppercase
+    color: $white
+    &:hover
+      color: $color-brand
+      
+.navbar-nav
+  margin-left: auto
+
+.navbar
+  .nav-link.active
+    color: $color-brand
+
+
+@media(min-width:992px)
+  .navbar
+    min-height: 100vh
+    width: $sidebar-width
+    background: linear-gradient(rgba(37, 43, 44, 0.8),rgba(37, 43, 44, 0.8))
+    background-size: cover
+    background-position: center
+    .navbar-brand
+      img
+        border: 6px solid $color-border
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5)

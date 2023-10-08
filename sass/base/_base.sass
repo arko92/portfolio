@@ -1,0 +1,30 @@
+body
+  background-color: $color-base2
+  font-size: $font-base
+  color: $color-body
+
+/* --- Overwriting header settings ---- */
+
+h1,h2,h3,h4,h5,h6
+  color: $color-heading
+  font-weight: 1000
+
+p
+  color: $color-heading
+
+
+/* --- Overwriting anchor settings ---- */
+
+a
+  text-decoration: none
+  color: $color-body
+  transition: all 0.4s ease
+  &:hover
+    color: $color-brand
+  .link-custom
+    color: $color-brand2
+
+
+@media(min-width:992px)
+  .content-wrapper
+    padding-left: $sidebar-width
